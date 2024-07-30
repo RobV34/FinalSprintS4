@@ -1,4 +1,5 @@
 package com.color.finalsprints4.controller;
 
-public class ColorVibeController {
+
+public class UserController {
 }

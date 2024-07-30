@@ -1,7 +1,7 @@
 package com.color.finalsprints4.controller;
 
-import com.color.finalsprints4.model.Style;
-import com.color.finalsprints4.service.StyleService;
+import com.color.finalsprints4.model.Vibe;
+import com.color.finalsprints4.service.VibeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,13 +12,15 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin
-public class StyleController {
+public class VibeController {
 
     @Autowired
-    StyleService styleService;
+    VibeService vibeService;
 
-    @GetMapping("style/{id}")
-    public Optional<Style> getStyleById(@PathVariable Long id) {
-        return styleService.getStyleById(id);
+
+    @GetMapping("vibe/{id}")
+    public Optional<Vibe> getVibeById(@PathVariable Long id) {
+        return vibeService.getVibeById(id);
+
     }
 }
