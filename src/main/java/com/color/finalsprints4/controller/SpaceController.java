@@ -1,7 +1,7 @@
 package com.color.finalsprints4.controller;
 
-import com.color.finalsprints4.model.Style;
-import com.color.finalsprints4.service.StyleService;
+import com.color.finalsprints4.model.Space;
+import com.color.finalsprints4.service.SpaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,13 +12,13 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin
-public class StyleController {
+public class SpaceController {
 
     @Autowired
-    StyleService styleService;
+    SpaceService spaceService;
 
-    @GetMapping("style/{id}")
-    public Optional<Style> getStyleById(@PathVariable Long id) {
-        return styleService.getStyleById(id);
+    @GetMapping("space/{id}")
+    public Optional<Space> getSpaceById(@PathVariable Long id) {
+        return spaceService.getSpaceById(id);
     }
 }

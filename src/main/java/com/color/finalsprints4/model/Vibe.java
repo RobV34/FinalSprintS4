@@ -23,12 +23,12 @@ public class Vibe {
         this.id = id;
     }
 
-    public String getName() {
+    public String getVibeName() {
         return vibeName;
     }
 
-    public void setName(String name) {
-        this.vibeName = name;
+    public void setVibeName(String vibeName) {
+        this.vibeName = vibeName;
     }
 
 }
