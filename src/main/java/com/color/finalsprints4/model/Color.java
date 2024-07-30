@@ -2,7 +2,7 @@ package com.color.finalsprints4.model;
 
 import jakarta.persistence.*;
 
-import java.util.LinkedList;
+import java.util.List;
 
 @Entity
 public class Color {
@@ -14,7 +14,9 @@ public class Color {
 
     private String name;
     private int hexNumber;
-    private LinkedList<String> vibeList;
+
+    @ManyToMany(fetch = FetchType.EAGER)
+    private List<Vibe> vibeList;
 
     @ManyToOne
     private Space space;
@@ -47,11 +49,7 @@ public class Color {
         this.hexNumber = hexNumber;
     }
 
-    public LinkedList<String> getVibeList() {
-        return vibeList;
-    }
-
-    public void setVibeList(LinkedList<String> vibeList) {
+    public void setVibeList(List<Vibe> vibeList) {
         this.vibeList = vibeList;
     }
 

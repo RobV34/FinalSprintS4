@@ -16,11 +16,18 @@ public class ColorService {
     private ColorRepository colorRepository;
 
     public List<Color> getAllColors() {
-        return (List<Color>) colorRepository.findAll();
-     }
+        try {
+            return (List<Color>) colorRepository.findAll();
+        } catch (Exception e) {
+            // Log the exception
+            e.printStackTrace();
+            // Handle or throw a custom exception
+            throw new RuntimeException("Error retrieving colors");
+        }
+    }
 
      public Color addColor(Color color) {
-        return colorRepository.save(color); 
+        return colorRepository.save(color);
      }
 
 }
