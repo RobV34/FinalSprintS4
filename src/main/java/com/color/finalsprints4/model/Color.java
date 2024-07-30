@@ -15,6 +15,7 @@ public class Color {
     private String name;
     private int hexNumber;
 
+
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Vibe> vibeList;
 
@@ -47,6 +48,10 @@ public class Color {
 
     public void setHexNumber(int hexNumber) {
         this.hexNumber = hexNumber;
+    }
+
+    public List<Vibe> getVibeList() {
+        return vibeList;
     }
 
     public void setVibeList(List<Vibe> vibeList) {
