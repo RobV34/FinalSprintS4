@@ -30,4 +30,7 @@ public class ColorService {
         return colorRepository.save(color);
      }
 
+    public void deleteColor(Long id) {
+
+    }
 }

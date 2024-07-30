@@ -25,6 +25,10 @@ public class ColorController {
         return colorService.addColor(newColor);
     }
 
+    @DeleteMapping("deleteColor/{id}")
+    public void deleteColor(@PathVariable Long id) {
+        colorService.deleteColor(id);
+    }
 
 
 
