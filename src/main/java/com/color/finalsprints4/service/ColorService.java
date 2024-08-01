@@ -81,4 +81,8 @@ public class ColorService {
     public void deleteColor(Long id) {
         colorRepository.deleteById(id);
     }
+
+    public Color updateColor(Long id, Object updatedColor) {
+        return null;
+    }
 }

@@ -1,5 +1,6 @@
 package com.color.finalsprints4.controller;
 
+import com.color.finalsprints4.model.Space;
 import com.color.finalsprints4.model.Style;
 import com.color.finalsprints4.service.StyleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,11 @@ public class StyleController {
     @PostMapping("newStyle")
     public Style newStyle(@RequestBody Style newStyle) {
         return styleService.addStyle(newStyle);
+    }
+
+    @PutMapping("updateStyle/{id}")
+    public Style updateStyle(@PathVariable Long id, @RequestBody Style updatedStyle) {
+        return styleService.updateStyle(id, updatedStyle);
     }
 
     @DeleteMapping("deleteStyle/{id}")
