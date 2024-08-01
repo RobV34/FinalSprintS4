@@ -1,15 +1,13 @@
 package com.color.finalsprints4.controller;
 
 import com.color.finalsprints4.model.Color;
-import com.color.finalsprints4.model.Space;
-import com.color.finalsprints4.model.Vibe;
 import com.color.finalsprints4.service.ColorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
+
 
 @RestController
 @CrossOrigin
@@ -32,6 +30,11 @@ public class ColorController {
     @PostMapping("newColor")
     public Color getNewColor(@RequestBody Color newColor) {
         return colorService.addColor(newColor);
+    }
+
+    @DeleteMapping("deleteColor/{id}")
+    public void deleteColor(@PathVariable Long id) {
+        colorService.deleteColor(id);
     }
 
 

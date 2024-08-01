@@ -78,4 +78,7 @@ public class ColorService {
         return colorVibes.size();
     }
 
+    public void deleteColor(Long id) {
+        colorRepository.deleteById(id);
+    }
 }
