@@ -18,4 +18,11 @@ public class SpaceService {
     }
 
 
+    public Space addSpace(Space newSpace) {
+        return spaceRepository.save(newSpace);
+    }
+
+    public void deleteLocation(Long id) {
+        spaceRepository.deleteById(id);
+    }
 }

@@ -16,4 +16,12 @@ public class StyleService {
     public Optional<Style> getStyleById(Long id) {
         return styleRepository.findById(id);
     }
+
+    public Style addStyle(Style newStyle) {
+        return styleRepository.save(newStyle);
+    }
+
+    public void deleteStyle(Long id) {
+        styleRepository.deleteById(id);
+    }
 }

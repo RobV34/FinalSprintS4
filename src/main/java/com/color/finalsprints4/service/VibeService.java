@@ -16,4 +16,12 @@ public class VibeService {
     public Optional<Vibe> getVibeById(Long id) {
         return vibeRepository.findById(id);
     }
+
+    public Vibe addVibe(Vibe newVibe) {
+        return vibeRepository.save(newVibe);
+    }
+
+    public void deleteVibe(Long id) {
+        vibeRepository.deleteById(id);
+    }
 }
