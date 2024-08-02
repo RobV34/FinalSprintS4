@@ -25,4 +25,8 @@ public class SpaceService {
     public void deleteLocation(Long id) {
         spaceRepository.deleteById(id);
     }
+
+    public Space updateSpace(Long id, Space updatedSpace) {
+        return updatedSpace;
+    }
 }

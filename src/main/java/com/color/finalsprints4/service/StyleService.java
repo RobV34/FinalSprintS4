@@ -24,4 +24,8 @@ public class StyleService {
     public void deleteStyle(Long id) {
         styleRepository.deleteById(id);
     }
+
+    public Style updateStyle(Long id, Style updatedStyle) {
+        return updatedStyle;
+    }
 }

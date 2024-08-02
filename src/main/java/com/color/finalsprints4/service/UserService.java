@@ -26,4 +26,8 @@ public class UserService {
         userRepository.deleteById(id);
 
     }
+
+    public User updateUser(Long id, User updatedUser) {
+        return updatedUser;
+    }
 }

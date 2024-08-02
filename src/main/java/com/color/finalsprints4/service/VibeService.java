@@ -24,4 +24,8 @@ public class VibeService {
     public void deleteVibe(Long id) {
         vibeRepository.deleteById(id);
     }
+
+    public Vibe updateVibe(Long id, Vibe updatedVibe) {
+        return updatedVibe;
+    }
 }
