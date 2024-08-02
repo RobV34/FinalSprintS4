@@ -11,27 +11,38 @@ import java.util.Optional;
 @Service
 public class PromotionService {
 
-    private final PromotionRepository promotionRepository;
-
     @Autowired
-    public PromotionService(PromotionRepository promotionRepository) {
-        this.promotionRepository = promotionRepository;
+    private PromotionRepository promotionRepository;
+
+    public List<Promotion> getAllPromotions() {
+        return promotionRepository.findAll();
     }
 
-    public List<Promotion> getPromotions(String color, String spaceType) {
-        return promotionRepository.findByColorAndSpaceType(color, spaceType);
+    public Optional<Promotion> getPromotionById(Long id) {
+        return promotionRepository.findById(id);
+    }
+
+    public Promotion addPromotion(Promotion promotion) {
+        return promotionRepository.save(promotion);
     }
 
     public Promotion updatePromotion(Long id, Promotion promotionDetails) {
         Optional<Promotion> optionalPromotion = promotionRepository.findById(id);
+
         if (optionalPromotion.isPresent()) {
             Promotion promotion = optionalPromotion.get();
             promotion.setColor(promotionDetails.getColor());
-            promotion.setSpaceType(promotionDetails.getSpaceType());
+            promotion.setSpace(promotionDetails.getSpace());
             promotion.setUrl(promotionDetails.getUrl());
             return promotionRepository.save(promotion);
         }
-        return null; // Or handle appropriately
+
+        return null; // Or throw an exception
+    }
+
+    public void deletePromotion(Long id) {
+        promotionRepository.deleteById(id);
     }
 }
+
 
