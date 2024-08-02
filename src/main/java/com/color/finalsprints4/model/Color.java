@@ -1,20 +1,18 @@
 package com.color.finalsprints4.model;
 
 import jakarta.persistence.*;
-
 import java.util.List;
 
 @Entity
 public class Color {
 
     @Id
-    @SequenceGenerator(name = "color_sequence", sequenceName = "color_sequence", allocationSize = 1, initialValue=1)
+    @SequenceGenerator(name = "color_sequence", sequenceName = "color_sequence", allocationSize = 1, initialValue = 1)
     @GeneratedValue(generator = "color_sequence")
     private Long id;
 
     private String name;
-    private int hexNumber;
-
+    private String hexNumber; // Changed from int to String
 
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Vibe> vibeList;
@@ -24,7 +22,6 @@ public class Color {
 
     @ManyToOne
     private Style style;
-
 
     public long getId() {
         return id;
@@ -42,11 +39,11 @@ public class Color {
         this.name = name;
     }
 
-    public int getHexNumber() {
+    public String getHexNumber() {
         return hexNumber;
     }
 
-    public void setHexNumber(int hexNumber) {
+    public void setHexNumber(String hexNumber) {
         this.hexNumber = hexNumber;
     }
 
@@ -73,5 +70,5 @@ public class Color {
     public void setStyle(Style style) {
         this.style = style;
     }
-
 }
+

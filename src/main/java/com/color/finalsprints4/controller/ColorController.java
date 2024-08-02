@@ -8,15 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-
 @RestController
 @CrossOrigin
 public class ColorController {
 
     @Autowired
     private ColorService colorService;
-    private Object updatedColor;
-
 
     @GetMapping("colors")
     public List<Color> getColors() {
@@ -34,8 +31,8 @@ public class ColorController {
     }
 
     @PutMapping("updateColor/{id}")
-    public Color updateColor(@PathVariable Long id, @RequestBody Color updateColor) {
-       return colorService.updateColor(id, updatedColor); 
+    public Color updateColor(@PathVariable Long id, @RequestBody Color updatedColor) {
+        return colorService.updateColor(id, updatedColor);
     }
 
     @DeleteMapping("deleteColor/{id}")
@@ -43,14 +40,9 @@ public class ColorController {
         colorService.deleteColor(id);
     }
 
-
     @GetMapping("generateUserColor")
     public Optional<Color> generateUserColor(@RequestParam List<Long> userVibeListOfId, @RequestParam Long userSpaceId, @RequestParam Long userStyleId) {
         return colorService.getUserColor(userVibeListOfId, userSpaceId, userStyleId);
     }
-
-
-
-
-
 }
+

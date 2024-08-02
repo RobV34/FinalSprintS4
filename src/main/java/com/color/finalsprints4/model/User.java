@@ -10,12 +10,16 @@ public class User {
     @GeneratedValue(generator = "user_sequence")
     private Long id;
 
-    private String userName;
+    private String email;
     private String firstName;
     private String lastName;
 
     @ManyToOne
-    Color selectedColor;
+    @JoinColumn(name = "selected_color_id")
+    private Color selectedColor;
+
+
+
 
     public Long getId() {
         return id;
@@ -25,13 +29,12 @@ public class User {
         this.id = id;
     }
 
-
-    public String getUserName() {
-        return userName;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getFirstName() {

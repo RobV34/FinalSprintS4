@@ -11,6 +11,7 @@ public class Vibe {
     @Id
     @SequenceGenerator(name = "vibe_sequence", sequenceName = "vibe_sequence", allocationSize = 1, initialValue=1)
     @GeneratedValue(generator = "vibe_sequence")
+
     private Long id;
 
     private String vibeName;

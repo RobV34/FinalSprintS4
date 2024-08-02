@@ -3,6 +3,7 @@ package com.color.finalsprints4.controller;
 import com.color.finalsprints4.model.Vibe;
 import com.color.finalsprints4.service.VibeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -26,8 +27,12 @@ public class VibeController {
     }
 
     @PutMapping("updateVibe/{id}")
-    public Vibe updateVibe(@PathVariable Long id, @RequestBody Vibe updatedVibe) {
-        return vibeService.updateVibe(id, updatedVibe);
+    public ResponseEntity<Vibe> updateVibe(@PathVariable("id") Long id, @RequestBody Vibe vibe) {
+        Vibe updatedVibe = vibeService.updateVibe(id, vibe);
+        if (updatedVibe == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(updatedVibe);
     }
 
     @DeleteMapping("deleteVibe/{id}")

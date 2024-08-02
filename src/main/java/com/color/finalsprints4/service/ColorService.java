@@ -9,11 +9,10 @@ import com.color.finalsprints4.repository.StyleRepository;
 import com.color.finalsprints4.repository.VibeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.color.finalsprints4.model.Color;
-import java.util.stream.Collectors;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 public class ColorService {
@@ -28,30 +27,27 @@ public class ColorService {
     private StyleRepository styleRepository;
 
     @Autowired
-    private VibeRepository vibeRepository; 
-
-
+    private VibeRepository vibeRepository;
 
     public List<Color> getAllColors() {
-            return (List<Color>) colorRepository.findAll();
+        return (List<Color>) colorRepository.findAll();
     }
 
-     public Color addColor(Color color) {
+    public Color addColor(Color color) {
         return colorRepository.save(color);
-     }
+    }
 
-     public Optional<Color> getColorById(Long id){
+    public Optional<Color> getColorById(Long id) {
         return colorRepository.findById(id);
-     }
+    }
 
     public Optional<Color> getUserColor(List<Long> userVibesListOfId, Long userSpaceId, Long userStyleId) {
 
         Optional<Space> spaceObjectSearch = spaceRepository.findById(userSpaceId);
         Optional<Style> styleObjectSearch = styleRepository.findById(userStyleId);
 
-
-        Space space = spaceObjectSearch.get();
-        Style style = styleObjectSearch.get();
+        Space space = spaceObjectSearch.orElse(null);
+        Style style = styleObjectSearch.orElse(null);
 
         List<Color> possibleSpaceMatches = colorRepository.findBySpace(space);
         List<Color> possibleStyleMatches = colorRepository.findByStyle(style);
@@ -69,7 +65,6 @@ public class ColorService {
 
         return listSpaceAndStyleMatches.stream()
                 .max(Comparator.comparingInt(color -> countCommonVibes(color, userVibes)));
-
     }
 
     private int countCommonVibes(Color color, Set<Vibe> userVibes) {
@@ -82,7 +77,18 @@ public class ColorService {
         colorRepository.deleteById(id);
     }
 
-    public Color updateColor(Long id, Object updatedColor) {
-        return null;
+    public Color updateColor(Long id, Color updatedColor) {
+        Optional<Color> existingColor = colorRepository.findById(id);
+        if (existingColor.isPresent()) {
+            Color color = existingColor.get();
+            color.setName(updatedColor.getName());
+            color.setHexNumber(updatedColor.getHexNumber());
+            color.setVibeList(updatedColor.getVibeList());
+            color.setSpace(updatedColor.getSpace());
+            color.setStyle(updatedColor.getStyle());
+            return colorRepository.save(color);
+        } else {
+            return null;
+        }
     }
 }

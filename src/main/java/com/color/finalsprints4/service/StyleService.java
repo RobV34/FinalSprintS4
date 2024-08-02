@@ -26,6 +26,20 @@ public class StyleService {
     }
 
     public Style updateStyle(Long id, Style updatedStyle) {
-        return updatedStyle;
+
+        Style existingStyle = styleRepository.findById(id)
+                .orElse(null);
+
+        if (existingStyle != null) {
+
+            if (updatedStyle.getStyleName() != null) {
+                existingStyle.setStyleName(updatedStyle.getStyleName());
+            }
+
+            return styleRepository.save(existingStyle);
+        } else {
+
+            return null;
+        }
     }
 }

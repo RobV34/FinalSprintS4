@@ -27,6 +27,14 @@ public class SpaceService {
     }
 
     public Space updateSpace(Long id, Space updatedSpace) {
-        return updatedSpace;
+        Optional<Space> existingSpaceOpt = spaceRepository.findById(id);
+        if (existingSpaceOpt.isPresent()) {
+            Space existingSpace = existingSpaceOpt.get();
+            existingSpace.setSpaceName(updatedSpace.getSpaceName());
+            existingSpace.setSuggestedAddOns(updatedSpace.getSuggestedAddOns());
+            return spaceRepository.save(existingSpace);
+        }
+        return null;
     }
+
 }

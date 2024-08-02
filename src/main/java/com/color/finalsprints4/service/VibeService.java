@@ -25,7 +25,10 @@ public class VibeService {
         vibeRepository.deleteById(id);
     }
 
-    public Vibe updateVibe(Long id, Vibe updatedVibe) {
-        return updatedVibe;
+    public Vibe updateVibe(Long id, Vibe vibe) {
+        return vibeRepository.findById(id).map(existingVibe -> {
+            existingVibe.setVibeName(vibe.getVibeName());
+            return vibeRepository.save(existingVibe);
+        }).orElse(null);
     }
 }
