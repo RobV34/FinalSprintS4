@@ -1,25 +1,30 @@
 package com.color.finalsprints4.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Promotion {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String color;
-    private String spaceType;
+
+    @ManyToOne
+    @JoinColumn(name = "color_id")
+    private Color color;
+
+    @ManyToOne
+    @JoinColumn(name = "space_id")
+    private Space space;
+
     private String url;
 
     public Promotion() {}
 
-    public Promotion(Long id, String color, String spaceType, String url) {
+    public Promotion(Long id, Color color, Space space, String url) {
         this.id = id;
         this.color = color;
-        this.spaceType = spaceType;
+        this.space = space;
         this.url = url;
     }
 
@@ -31,20 +36,20 @@ public class Promotion {
         this.id = id;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
-    public String getSpaceType() {
-        return spaceType;
+    public Space getSpace() {
+        return space;
     }
 
-    public void setSpaceType(String spaceType) {
-        this.spaceType = spaceType;
+    public void setSpace(Space space) {
+        this.space = space;
     }
 
     public String getUrl() {
@@ -55,5 +60,3 @@ public class Promotion {
         this.url = url;
     }
 }
-
-
