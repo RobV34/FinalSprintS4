@@ -15,7 +15,7 @@ public class StyleController {
     StyleService styleService;
 
     @GetMapping("style/{id}")
-    public Optional<Style> getStyleById(@PathVariable Long id) {
+    public Style getStyleById(@PathVariable Long id) {
         return styleService.getStyleById(id);
     }
 
@@ -27,5 +27,10 @@ public class StyleController {
     @DeleteMapping("deleteStyle/{id}")
     public void deleteStyle(@PathVariable Long id) {
         styleService.deleteStyle(id);
+    }
+
+    @PutMapping("updateStyle/{id}")
+    public Style updateStyle(@PathVariable Long id, @RequestBody Style updatedStyle) {
+        return styleService.updateStyle(id, updatedStyle);
     }
 }

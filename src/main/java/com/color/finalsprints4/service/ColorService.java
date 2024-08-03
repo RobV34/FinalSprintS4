@@ -1,7 +1,5 @@
 package com.color.finalsprints4.service;
 
-import com.color.finalsprints4.model.Space;
-import com.color.finalsprints4.model.Style;
 import com.color.finalsprints4.model.Vibe;
 import com.color.finalsprints4.repository.ColorRepository;
 import com.color.finalsprints4.repository.SpaceRepository;
@@ -40,8 +38,14 @@ public class ColorService {
         return colorRepository.save(color);
      }
 
-     public Optional<Color> getColorById(Long id){
-        return colorRepository.findById(id);
+     public Color getColorById(Long id){
+         Optional<Color> result = colorRepository.findById(id);
+
+         if (result.isPresent()) {
+             return result.get();
+         }
+
+         return null;
      }
 
     public Optional<Color> getUserColor(List<Long> userVibesListOfId, Long userSpaceId, Long userStyleId) {
@@ -67,5 +71,18 @@ public class ColorService {
 
     public void deleteColor(Long id) {
         colorRepository.deleteById(id);
+    }
+
+    public Color updateColor(Long id, Color updatedColor) {
+        Color colorToUpdate = getColorById(id);
+
+        colorToUpdate.setId(updatedColor.getId());
+        colorToUpdate.setName(updatedColor.getName());
+        colorToUpdate.setHexNumber(updatedColor.getHexNumber());
+        colorToUpdate.setSpace(updatedColor.getSpace());
+        colorToUpdate.setStyle(updatedColor.getStyle());
+        colorToUpdate.setVibeList(updatedColor.getVibeList());
+
+        return colorRepository.save(colorToUpdate);
     }
 }

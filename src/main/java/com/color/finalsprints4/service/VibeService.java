@@ -1,5 +1,7 @@
 package com.color.finalsprints4.service;
 
+import com.color.finalsprints4.model.Color;
+import com.color.finalsprints4.model.Space;
 import com.color.finalsprints4.model.Vibe;
 import com.color.finalsprints4.repository.VibeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +15,14 @@ public class VibeService {
     @Autowired
     VibeRepository vibeRepository;
 
-    public Optional<Vibe> getVibeById(Long id) {
-        return vibeRepository.findById(id);
+    public Vibe getVibeById(Long id) {
+        Optional<Vibe> result = vibeRepository.findById(id);
+
+        if (result.isPresent()) {
+            return result.get();
+        }
+
+        return null;
     }
 
     public Vibe addVibe(Vibe newVibe) {
@@ -23,5 +31,14 @@ public class VibeService {
 
     public void deleteVibe(Long id) {
         vibeRepository.deleteById(id);
+    }
+
+    public Vibe updateVibe(Long id, Vibe updatedVibe) {
+        Vibe vibeToUpdate = getVibeById(id);
+
+        vibeToUpdate.setId(updatedVibe.getId());
+        vibeToUpdate.setVibeName(updatedVibe.getVibeName());
+
+        return vibeRepository.save(vibeToUpdate);
     }
 }

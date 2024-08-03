@@ -23,13 +23,18 @@ public class ColorController {
     }
 
     @GetMapping("color/{id}")
-    public Optional<Color> getColorById(@PathVariable Long id) {
+    public Color getColorById(@PathVariable Long id) {
         return colorService.getColorById(id);
     }
 
     @PostMapping("newColor")
     public Color getNewColor(@RequestBody Color newColor) {
         return colorService.addColor(newColor);
+    }
+
+    @PutMapping("updateColor/{id}")
+    public Color updateColor(@PathVariable Long id, @RequestBody Color updatedColor) {
+        return colorService.updateColor(id, updatedColor);
     }
 
     @DeleteMapping("deleteColor/{id}")
