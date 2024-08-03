@@ -18,4 +18,6 @@ public interface ColorRepository extends CrudRepository<Color, Long> {
     public List<Color> findBySpace(Space space);
 
     public List<Color> findByStyle(Style style);
+
+    public List<Color> findBySpaceIdAndStyleId(Long spaceId, Long styleId);
 }

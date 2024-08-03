@@ -46,20 +46,7 @@ public class ColorService {
 
     public Optional<Color> getUserColor(List<Long> userVibesListOfId, Long userSpaceId, Long userStyleId) {
 
-        Optional<Space> spaceObjectSearch = spaceRepository.findById(userSpaceId);
-        Optional<Style> styleObjectSearch = styleRepository.findById(userStyleId);
-
-
-        Space space = spaceObjectSearch.get();
-        Style style = styleObjectSearch.get();
-
-        List<Color> possibleSpaceMatches = colorRepository.findBySpace(space);
-        List<Color> possibleStyleMatches = colorRepository.findByStyle(style);
-
-        Set<Color> spaceAndStyleMatches = new HashSet<>(possibleSpaceMatches);
-        spaceAndStyleMatches.retainAll(possibleStyleMatches);
-
-        List<Color> listSpaceAndStyleMatches = new ArrayList<>(spaceAndStyleMatches);
+        List<Color> spaceAndStyleResults = colorRepository.findBySpaceIdAndStyleId(userSpaceId, userStyleId);
 
         Set<Vibe> userVibes = userVibesListOfId.stream()
                 .map(vibeRepository::findById)
@@ -67,7 +54,7 @@ public class ColorService {
                 .map(Optional::get)
                 .collect(Collectors.toSet());
 
-        return listSpaceAndStyleMatches.stream()
+        return spaceAndStyleResults.stream()
                 .max(Comparator.comparingInt(color -> countCommonVibes(color, userVibes)));
 
     }
