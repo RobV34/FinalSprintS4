@@ -35,20 +35,26 @@ public class UserService {
     }
 
     public void deleteUser(Long id) {
-        userRepository.deleteById(id);
+        if (userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+        } else {
+            throw new RuntimeException("User not found with id: " + id);
+        }
 
     }
 
     public User updateUser(Long id, User updatedUser) {
-        User userToUpdate = getUserById(id);
-
-       userToUpdate.setId(updatedUser.getId());
-       userToUpdate.setUserName(updatedUser.getUserName());
-       userToUpdate.setFirstName(updatedUser.getFirstName());
-       userToUpdate.setLastName(updatedUser.getLastName());
-       userToUpdate.setSelectedColor(updatedUser.getSelectedColor());
-
-        return userRepository.save(userToUpdate);
-
+        Optional<User> existingUser = userRepository.findById(id);
+        if (existingUser.isPresent()) {
+            User user = existingUser.get();
+            // Update fields
+            user.setFirstName(updatedUser.getFirstName());
+            user.setLastName(updatedUser.getLastName());
+            user.setEmail(updatedUser.getEmail());
+            user.setSelectedColor(updatedUser.getSelectedColor());
+            return userRepository.save(user);
+        } else {
+            throw new RuntimeException("User not found with id: " + id);
+        }
     }
 }

@@ -1,6 +1,7 @@
 package com.color.finalsprints4.controller;
 
 
+import com.color.finalsprints4.model.Color;
 import com.color.finalsprints4.model.User;
 import com.color.finalsprints4.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,11 @@ public class UserController {
     @GetMapping("users")
     public List<User> getUsers() {
         return userService.getAllUsers();
+    }
+
+    @GetMapping("user/{id}")
+    public User getUserById(@PathVariable Long id) {
+        return userService.getUserById(id);
     }
 
     @PostMapping("newUser")
