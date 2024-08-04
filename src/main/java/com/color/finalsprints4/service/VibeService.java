@@ -34,11 +34,13 @@ public class VibeService {
     }
 
     public Vibe updateVibe(Long id, Vibe updatedVibe) {
+
         Vibe vibeToUpdate = getVibeById(id);
 
         vibeToUpdate.setId(updatedVibe.getId());
         vibeToUpdate.setVibeName(updatedVibe.getVibeName());
 
         return vibeRepository.save(vibeToUpdate);
+
     }
 }

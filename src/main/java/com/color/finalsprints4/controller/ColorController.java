@@ -15,6 +15,7 @@ public class ColorController {
 
     @Autowired
     private ColorService colorService;
+    private Object updatedColor;
 
 
     @GetMapping("colors")
@@ -33,6 +34,7 @@ public class ColorController {
     }
 
     @PutMapping("updateColor/{id}")
+
     public Color updateColor(@PathVariable Long id, @RequestBody Color updatedColor) {
         return colorService.updateColor(id, updatedColor);
     }

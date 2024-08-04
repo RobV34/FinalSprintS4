@@ -57,4 +57,8 @@ public class UserService {
             throw new RuntimeException("User not found with id: " + id);
         }
     }
+
+    public User updateUser(Long id, User updatedUser) {
+        return updatedUser;
+    }
 }

@@ -34,6 +34,7 @@ public class SpaceService {
     }
 
     public Space updateSpace(Long id, Space updatedSpace) {
+
         Space spaceToUpdate = getSpaceById(id);
 
         spaceToUpdate.setId(updatedSpace.getId());
@@ -41,5 +42,6 @@ public class SpaceService {
         spaceToUpdate.setSuggestedAddOns(updatedSpace.getSuggestedAddOns());
 
         return spaceRepository.save(spaceToUpdate);
+
     }
 }

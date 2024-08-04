@@ -10,3 +10,4 @@ import java.util.List;
 public interface PromotionRepository extends JpaRepository<Promotion, Long> {
     List<Promotion> findByColorAndSpaceType(String color, String spaceType);
 }
+

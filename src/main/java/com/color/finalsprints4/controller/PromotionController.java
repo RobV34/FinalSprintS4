@@ -27,4 +27,6 @@ public class PromotionController {
     public Promotion updatePromotion(@PathVariable Long id, @RequestBody Promotion promotion) {
         return promotionService.updatePromotion(id, promotion);
     }
+
 }
+

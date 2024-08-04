@@ -24,6 +24,11 @@ public class SpaceController {
         return spaceService.addSpace(newSpace);
     }
 
+    @PutMapping("updateSpace/{id}")
+    public Space updateSpace(@PathVariable Long id, @RequestBody Space updatedSpace) {
+      return spaceService.updateSpace(id, updatedSpace);
+    }
+
     @DeleteMapping("deleteSpace/{id}")
     public void deleteLocation(@PathVariable Long id) {
         spaceService.deleteLocation(id);

@@ -83,6 +83,7 @@ public class ColorService {
         colorToUpdate.setStyle(updatedColor.getStyle());
         colorToUpdate.setVibeList(updatedColor.getVibeList());
 
-        return colorRepository.save(colorToUpdate);
+        return colorRepository.save(colorToUpdate); 
     }
+  
 }

@@ -33,11 +33,13 @@ public class StyleService {
     }
 
     public Style updateStyle(Long id, Style updatedStyle) {
+
         Style styleToUpdate = getStyleById(id);
 
         styleToUpdate.setId(updatedStyle.getId());
         styleToUpdate.setStyleName(updatedStyle.getStyleName());
 
         return styleRepository.save(styleToUpdate);
+
     }
 }
