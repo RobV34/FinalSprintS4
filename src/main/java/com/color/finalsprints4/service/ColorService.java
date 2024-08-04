@@ -1,7 +1,5 @@
 package com.color.finalsprints4.service;
 
-import com.color.finalsprints4.model.Space;
-import com.color.finalsprints4.model.Style;
 import com.color.finalsprints4.model.Vibe;
 import com.color.finalsprints4.repository.ColorRepository;
 import com.color.finalsprints4.repository.SpaceRepository;
@@ -40,26 +38,19 @@ public class ColorService {
         return colorRepository.save(color);
      }
 
-     public Optional<Color> getColorById(Long id){
-        return colorRepository.findById(id);
+     public Color getColorById(Long id){
+         Optional<Color> result = colorRepository.findById(id);
+
+         if (result.isPresent()) {
+             return result.get();
+         }
+
+         return null;
      }
 
     public Optional<Color> getUserColor(List<Long> userVibesListOfId, Long userSpaceId, Long userStyleId) {
 
-        Optional<Space> spaceObjectSearch = spaceRepository.findById(userSpaceId);
-        Optional<Style> styleObjectSearch = styleRepository.findById(userStyleId);
-
-
-        Space space = spaceObjectSearch.get();
-        Style style = styleObjectSearch.get();
-
-        List<Color> possibleSpaceMatches = colorRepository.findBySpace(space);
-        List<Color> possibleStyleMatches = colorRepository.findByStyle(style);
-
-        Set<Color> spaceAndStyleMatches = new HashSet<>(possibleSpaceMatches);
-        spaceAndStyleMatches.retainAll(possibleStyleMatches);
-
-        List<Color> listSpaceAndStyleMatches = new ArrayList<>(spaceAndStyleMatches);
+        List<Color> spaceAndStyleResults = colorRepository.findBySpaceIdAndStyleId(userSpaceId, userStyleId);
 
         Set<Vibe> userVibes = userVibesListOfId.stream()
                 .map(vibeRepository::findById)
@@ -67,7 +58,7 @@ public class ColorService {
                 .map(Optional::get)
                 .collect(Collectors.toSet());
 
-        return listSpaceAndStyleMatches.stream()
+        return spaceAndStyleResults.stream()
                 .max(Comparator.comparingInt(color -> countCommonVibes(color, userVibes)));
 
     }
@@ -82,7 +73,17 @@ public class ColorService {
         colorRepository.deleteById(id);
     }
 
-    public Color updateColor(Long id, Object updatedColor) {
-        return null;
+    public Color updateColor(Long id, Color updatedColor) {
+        Color colorToUpdate = getColorById(id);
+
+        colorToUpdate.setId(updatedColor.getId());
+        colorToUpdate.setName(updatedColor.getName());
+        colorToUpdate.setHexNumber(updatedColor.getHexNumber());
+        colorToUpdate.setSpace(updatedColor.getSpace());
+        colorToUpdate.setStyle(updatedColor.getStyle());
+        colorToUpdate.setVibeList(updatedColor.getVibeList());
+
+        return colorRepository.save(colorToUpdate); 
     }
+  
 }

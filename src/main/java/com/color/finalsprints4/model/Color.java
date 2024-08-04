@@ -3,6 +3,7 @@ package com.color.finalsprints4.model;
 import jakarta.persistence.*;
 
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 public class Color {
@@ -13,16 +14,16 @@ public class Color {
     private Long id;
 
     private String name;
-    private int hexNumber;
+    private String hexNumber;
 
 
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Vibe> vibeList;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Space space;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Style style;
 
 
@@ -42,11 +43,11 @@ public class Color {
         this.name = name;
     }
 
-    public int getHexNumber() {
+    public String getHexNumber() {
         return hexNumber;
     }
 
-    public void setHexNumber(int hexNumber) {
+    public void setHexNumber(String hexNumber) {
         this.hexNumber = hexNumber;
     }
 
@@ -72,6 +73,19 @@ public class Color {
 
     public void setStyle(Style style) {
         this.style = style;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Color color = (Color) o;
+        return Objects.equals(id, color.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 
 }

@@ -1,5 +1,6 @@
 package com.color.finalsprints4.service;
 
+import com.color.finalsprints4.model.Color;
 import com.color.finalsprints4.model.Space;
 import com.color.finalsprints4.repository.SpaceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,14 @@ public class SpaceService {
     @Autowired
     SpaceRepository spaceRepository;
 
-    public Optional<Space> getSpaceById(Long id){
-        return spaceRepository.findById(id);
+    public Space getSpaceById(Long id){
+        Optional<Space> result = spaceRepository.findById(id);
+
+        if (result.isPresent()) {
+            return result.get();
+        }
+
+        return null;
     }
 
 
@@ -27,6 +34,14 @@ public class SpaceService {
     }
 
     public Space updateSpace(Long id, Space updatedSpace) {
-        return updatedSpace;
+
+        Space spaceToUpdate = getSpaceById(id);
+
+        spaceToUpdate.setId(updatedSpace.getId());
+        spaceToUpdate.setSpaceName(updatedSpace.getSpaceName());
+        spaceToUpdate.setSuggestedAddOns(updatedSpace.getSuggestedAddOns());
+
+        return spaceRepository.save(spaceToUpdate);
+
     }
 }

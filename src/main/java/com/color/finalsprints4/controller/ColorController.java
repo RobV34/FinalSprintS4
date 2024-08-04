@@ -24,7 +24,7 @@ public class ColorController {
     }
 
     @GetMapping("color/{id}")
-    public Optional<Color> getColorById(@PathVariable Long id) {
+    public Color getColorById(@PathVariable Long id) {
         return colorService.getColorById(id);
     }
 
@@ -34,8 +34,9 @@ public class ColorController {
     }
 
     @PutMapping("updateColor/{id}")
-    public Color updateColor(@PathVariable Long id, @RequestBody Color updateColor) {
-       return colorService.updateColor(id, updatedColor); 
+
+    public Color updateColor(@PathVariable Long id, @RequestBody Color updatedColor) {
+        return colorService.updateColor(id, updatedColor);
     }
 
     @DeleteMapping("deleteColor/{id}")

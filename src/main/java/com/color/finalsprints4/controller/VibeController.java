@@ -16,7 +16,7 @@ public class VibeController {
 
 
     @GetMapping("vibe/{id}")
-    public Optional<Vibe> getVibeById(@PathVariable Long id) {
+    public Vibe getVibeById(@PathVariable Long id) {
         return vibeService.getVibeById(id);
     }
 
@@ -33,5 +33,10 @@ public class VibeController {
     @DeleteMapping("deleteVibe/{id}")
     public void deleteVibe(@PathVariable Long id) {
         vibeService.deleteVibe(id);
+    }
+
+    @PutMapping("updateVibe/{id}")
+    public Vibe updateVibe(@PathVariable Long id, @RequestBody Vibe updatedVibe) {
+        return vibeService.updateVibe(id, updatedVibe);
     }
 }

@@ -31,7 +31,8 @@ public class PromotionService {
             promotion.setUrl(promotionDetails.getUrl());
             return promotionRepository.save(promotion);
         }
-        return null; // Or handle appropriately
+
+        return null;
     }
 }
 

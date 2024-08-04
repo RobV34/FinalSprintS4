@@ -1,5 +1,6 @@
 package com.color.finalsprints4.service;
 
+import com.color.finalsprints4.model.Space;
 import com.color.finalsprints4.model.Style;
 import com.color.finalsprints4.repository.StyleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,14 @@ public class StyleService {
     @Autowired
     StyleRepository styleRepository;
 
-    public Optional<Style> getStyleById(Long id) {
-        return styleRepository.findById(id);
+    public Style getStyleById(Long id) {
+        Optional<Style> result = styleRepository.findById(id);
+
+        if (result.isPresent()) {
+            return result.get();
+        }
+
+        return null;
     }
 
     public Style addStyle(Style newStyle) {
@@ -26,6 +33,13 @@ public class StyleService {
     }
 
     public Style updateStyle(Long id, Style updatedStyle) {
-        return updatedStyle;
+
+        Style styleToUpdate = getStyleById(id);
+
+        styleToUpdate.setId(updatedStyle.getId());
+        styleToUpdate.setStyleName(updatedStyle.getStyleName());
+
+        return styleRepository.save(styleToUpdate);
+
     }
 }
