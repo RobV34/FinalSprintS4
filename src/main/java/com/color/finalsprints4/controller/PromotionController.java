@@ -1,6 +1,8 @@
 package com.color.finalsprints4.controller;
 
+import com.color.finalsprints4.model.Color;
 import com.color.finalsprints4.model.Promotion;
+import com.color.finalsprints4.model.Space;
 import com.color.finalsprints4.service.PromotionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/promotions")
 public class PromotionController {
 
@@ -18,9 +21,9 @@ public class PromotionController {
         this.promotionService = promotionService;
     }
 
-    @GetMapping
-    public List<Promotion> getPromotions(@RequestParam String color, @RequestParam String spaceType) {
-        return promotionService.getPromotions(color, spaceType);
+    @GetMapping("promotion/{id}")
+    public Promotion getPromotionById(@PathVariable Long id) {
+        return promotionService.getPromotionById(id);
     }
 
     @PutMapping("/{id}")

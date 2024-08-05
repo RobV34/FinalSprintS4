@@ -38,7 +38,7 @@ public class SpaceService {
 
         spaceToUpdate.setId(updatedSpace.getId());
         spaceToUpdate.setSpaceName(updatedSpace.getSpaceName());
-        spaceToUpdate.setSuggestedAddOns(updatedSpace.getSuggestedAddOns());
+        spaceToUpdate.setPromotion(updatedSpace.getPromotion());
 
         return spaceRepository.save(spaceToUpdate);
     }
