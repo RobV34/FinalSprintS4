@@ -25,10 +25,7 @@ public class StyleController {
         return styleService.addStyle(newStyle);
     }
 
-    @PutMapping("updateStyle/{id}")
-    public Style updateStyle(@PathVariable Long id, @RequestBody Style updatedStyle) {
-        return styleService.updateStyle(id, updatedStyle);
-    }
+
 
     @DeleteMapping("deleteStyle/{id}")
     public void deleteStyle(@PathVariable Long id) {

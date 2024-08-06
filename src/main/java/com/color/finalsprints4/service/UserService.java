@@ -1,7 +1,5 @@
 package com.color.finalsprints4.service;
 
-import com.color.finalsprints4.model.Color;
-import com.color.finalsprints4.model.Space;
 import com.color.finalsprints4.model.User;
 import com.color.finalsprints4.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,21 +11,21 @@ import java.util.Optional;
 @Service
 public class UserService {
 
+    private final UserRepository userRepository;
+
     @Autowired
-    UserRepository userRepository;
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
     public List<User> getAllUsers() {
         return (List<User>) userRepository.findAll();
     }
 
-    public User getUserById(Long id){
-        Optional<User> result = userRepository.findById(id);
 
-        if (result.isPresent()) {
-            return result.get();
-        }
-
-        return null;
+    public User getUserById(Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
     }
 
     public User addUser(User newUser) {
@@ -40,23 +38,18 @@ public class UserService {
         } else {
             throw new RuntimeException("User not found with id: " + id);
         }
-
     }
 
     public User updateUser(Long id, User updatedUser) {
-        Optional<User> existingUser = userRepository.findById(id);
-        if (existingUser.isPresent()) {
-            User user = existingUser.get();
-            // Update fields
-            user.setFirstName(updatedUser.getFirstName());
-            user.setLastName(updatedUser.getLastName());
-            user.setEmail(updatedUser.getEmail());
-            user.setSelectedColor(updatedUser.getSelectedColor());
-            return userRepository.save(user);
-        } else {
-            throw new RuntimeException("User not found with id: " + id);
-        }
+        return userRepository.findById(id)
+                .map(user -> {
+                    user.setFirstName(updatedUser.getFirstName());
+                    user.setLastName(updatedUser.getLastName());
+                    user.setEmail(updatedUser.getEmail());
+                    user.setSelectedColor(updatedUser.getSelectedColor());
+                    return userRepository.save(user);
+                })
+                .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
     }
-
-
 }
+
