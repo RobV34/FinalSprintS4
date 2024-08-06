@@ -35,8 +35,5 @@ public class StyleController {
         styleService.deleteStyle(id);
     }
 
-    @PutMapping("updateStyle/{id}")
-    public Style updateStyle(@PathVariable Long id, @RequestBody Style updatedStyle) {
-        return styleService.updateStyle(id, updatedStyle);
-    }
+
 }
