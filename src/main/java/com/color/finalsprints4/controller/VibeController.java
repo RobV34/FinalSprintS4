@@ -32,8 +32,5 @@ public class VibeController {
         vibeService.deleteVibe(id);
     }
 
-    @PutMapping("updateVibe/{id}")
-    public Vibe updateVibe(@PathVariable Long id, @RequestBody Vibe updatedVibe) {
-        return vibeService.updateVibe(id, updatedVibe);
-    }
+
 }
