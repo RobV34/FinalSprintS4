@@ -33,8 +33,12 @@ public class ColorController {
         return colorService.addColor(newColor);
     }
 
-    @PutMapping("updateColor/{id}")
+    @PostMapping("newColors")
+    public List<Color> addNewColors(@RequestBody List<Color> newColors) {
+        return colorService.addColors(newColors);
+    }
 
+    @PutMapping("updateColor/{id}")
     public Color updateColor(@PathVariable Long id, @RequestBody Color updatedColor) {
         return colorService.updateColor(id, updatedColor);
     }

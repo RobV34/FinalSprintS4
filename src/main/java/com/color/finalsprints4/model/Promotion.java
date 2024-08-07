@@ -10,16 +10,15 @@ public class Promotion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String color;
-    private String spaceType;
+
+    private String companyName;
     private String url;
 
     public Promotion() {}
 
-    public Promotion(Long id, String color, String spaceType, String url) {
+    public Promotion(Long id, String companyName, String url) {
         this.id = id;
-        this.color = color;
-        this.spaceType = spaceType;
+        this.companyName = companyName;
         this.url = url;
     }
 
@@ -31,20 +30,12 @@ public class Promotion {
         this.id = id;
     }
 
-    public String getColor() {
-        return color;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getSpaceType() {
-        return spaceType;
-    }
-
-    public void setSpaceType(String spaceType) {
-        this.spaceType = spaceType;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     public String getUrl() {
@@ -54,6 +45,5 @@ public class Promotion {
     public void setUrl(String url) {
         this.url = url;
     }
+
 }
-
-

@@ -38,7 +38,12 @@ public class ColorService {
         return colorRepository.save(color);
      }
 
-     public Color getColorById(Long id){
+    public List<Color> addColors(List<Color> newColors) {
+        return (List<Color>) colorRepository.saveAll(newColors);
+    }
+
+
+    public Color getColorById(Long id){
          Optional<Color> result = colorRepository.findById(id);
 
          if (result.isPresent()) {

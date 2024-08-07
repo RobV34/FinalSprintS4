@@ -2,8 +2,6 @@ package com.color.finalsprints4.model;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 public class Space {
@@ -14,7 +12,9 @@ public class Space {
     private Long id;
 
     private String spaceName;
-    ArrayList<String> suggestedAddOns;
+
+    @OneToOne
+    private Promotion promotion;
 
 
     public long getId() {
@@ -33,12 +33,12 @@ public class Space {
         this.spaceName = spaceName;
     }
 
-    public ArrayList<String> getSuggestedAddOns() {
-        return suggestedAddOns;
+    public Promotion getPromotion() {
+        return promotion;
     }
 
-    public void setSuggestedAddOns(ArrayList<String> suggestedAddOns) {
-        this.suggestedAddOns = suggestedAddOns;
+    public void setPromotion(Promotion promotion) {
+        this.promotion = promotion;
     }
 
 
