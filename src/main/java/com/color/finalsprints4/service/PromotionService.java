@@ -18,9 +18,6 @@ public class PromotionService {
         this.promotionRepository = promotionRepository;
     }
 
-    public List<Promotion> getPromotions(String color, String spaceType) {
-        return promotionRepository.findByColorAndSpaceType(color, spaceType);
-    }
 
     public Promotion updatePromotion(Long id, Promotion promotionDetails) {
         Optional<Promotion> optionalPromotion = promotionRepository.findById(id);

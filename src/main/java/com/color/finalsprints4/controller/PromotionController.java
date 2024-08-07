@@ -18,10 +18,6 @@ public class PromotionController {
         this.promotionService = promotionService;
     }
 
-    @GetMapping
-    public List<Promotion> getPromotions(@RequestParam String color, @RequestParam String spaceType) {
-        return promotionService.getPromotions(color, spaceType);
-    }
 
     @PutMapping("/{id}")
     public Promotion updatePromotion(@PathVariable Long id, @RequestBody Promotion promotion) {
