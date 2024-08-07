@@ -26,8 +26,7 @@ public class PromotionService {
         Optional<Promotion> optionalPromotion = promotionRepository.findById(id);
         if (optionalPromotion.isPresent()) {
             Promotion promotion = optionalPromotion.get();
-            promotion.setColor(promotionDetails.getColor());
-            promotion.setSpaceType(promotionDetails.getSpaceType());
+            promotion.setCompanyName(promotionDetails.getCompanyName());
             promotion.setUrl(promotionDetails.getUrl());
             return promotionRepository.save(promotion);
         }
