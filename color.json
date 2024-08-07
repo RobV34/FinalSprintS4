@@ -1,5 +1,5 @@
 [
-    // Reds
+
     {
         "name": "Red",
         "hexNumber": "#FF0000",
@@ -8,7 +8,7 @@
             { "id": 2, "name": "cheerful" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
     {
         "name": "FireBrick",
@@ -18,7 +18,7 @@
             { "id": 4, "name": "warm" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
     {
         "name": "Crimson",
@@ -38,7 +38,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
     {
         "name": "Salmon",
@@ -58,7 +58,7 @@
             { "id": 4, "name": "warm" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
     {
         "name": "LightCoral",
@@ -68,7 +68,7 @@
             { "id": 7, "name": "cool" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
     {
         "name": "Red",
@@ -78,7 +78,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
     {
         "name": "LightSalmon",
@@ -98,9 +98,9 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
-    // Oranges
+
     {
         "name": "Orange",
         "hexNumber": "#FFA500",
@@ -119,7 +119,7 @@
             { "id": 7, "name": "cool" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
     {
         "name": "Coral",
@@ -129,7 +129,7 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
     {
         "name": "Tomato",
@@ -149,7 +149,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
     {
         "name": "LightSalmon",
@@ -159,7 +159,7 @@
             { "id": 1, "name": "bold" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
     {
         "name": "SandyBrown",
@@ -179,7 +179,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
     {
         "name": "DarkGoldenrod",
@@ -189,7 +189,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
     {
         "name": "Peru",
@@ -201,7 +201,6 @@
         "space": { "id": 2 },
         "style": { "id": 1 }
     },
-    // Yellows
     {
         "name": "Gold",
         "hexNumber": "#FFD700",
@@ -210,7 +209,7 @@
             { "id": 2, "name": "cheerful" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 3 }
+        "style": { "id": 1 }
     },
     {
         "name": "Yellow",
@@ -230,7 +229,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
     {
         "name": "LemonChiffon",
@@ -239,70 +238,79 @@
             { "id": 3, "name": "calm" },
             { "id": 4, "name": "warm" }
         ],
-        "space": { "id": 3 },
+        "space": { "id": 2 },
         "style": { "id": 1 }
     },
     {
         "name": "LightGoldenrodYellow",
         "hexNumber": "#FAFAD2",
         "vibeList": [
-            { "id": 5, "name": "relaxing" },
-            { "id": 9, "name": "elegant" }
+            { "id": 9, "name": "elegant" },
+            { "id": 10, "name": "sophisticated" }
         ],
-        "space": { "id": 2 },
-        "style": { "id": 3 }
+        "space": { "id": 3 },
+        "style": { "id": 1 }
     },
     {
         "name": "PapayaWhip",
         "hexNumber": "#FFEFD5",
         "vibeList": [
-            { "id": 2, "name": "cheerful" },
-            { "id": 10, "name": "sophisticated" }
+            { "id": 1, "name": "bold" },
+            { "id": 2, "name": "cheerful" }
         ],
-        "space": { "id": 1 },
+        "space": { "id": 2 },
         "style": { "id": 1 }
     },
     {
         "name": "Moccasin",
         "hexNumber": "#FFE4B5",
         "vibeList": [
-            { "id": 6, "name": "vibrant" },
-            { "id": 8, "name": "energetic" }
+            { "id": 5, "name": "relaxing" },
+            { "id": 6, "name": "vibrant" }
         ],
-        "space": { "id": 3 },
-        "style": { "id": 2 }
+        "space": { "id": 1 },
+        "style": { "id": 1 }
     },
     {
         "name": "PeachPuff",
         "hexNumber": "#FFDAB9",
         "vibeList": [
-            { "id": 3, "name": "calm" },
-            { "id": 4, "name": "warm" }
+            { "id": 7, "name": "cool" },
+            { "id": 8, "name": "energetic" }
         ],
-        "space": { "id": 2 },
-        "style": { "id": 3 }
+        "space": { "id": 3 },
+        "style": { "id": 1 }
     },
     {
         "name": "PaleGoldenrod",
         "hexNumber": "#EEE8AA",
         "vibeList": [
-            { "id": 5, "name": "relaxing" },
-            { "id": 7, "name": "cool" }
+            { "id": 3, "name": "calm" },
+            { "id": 4, "name": "warm" }
         ],
-        "space": { "id": 1 },
+        "space": { "id": 2 },
         "style": { "id": 1 }
     },
     {
         "name": "Khaki",
         "hexNumber": "#F0E68C",
         "vibeList": [
+            { "id": 9, "name": "elegant" },
+            { "id": 10, "name": "sophisticated" }
+        ],
+        "space": { "id": 1 },
+        "style": { "id": 1 }
+    },
+    {
+        "name": "DarkKhaki",
+        "hexNumber": "#BDB76B",
+        "vibeList": [
             { "id": 1, "name": "bold" },
-            { "id": 9, "name": "elegant" }
+            { "id": 2, "name": "cheerful" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 1 }
     },
-    // Greens
     {
         "name": "Green",
         "hexNumber": "#008000",
@@ -311,7 +319,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "ForestGreen",
@@ -321,7 +329,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "LimeGreen",
@@ -341,7 +349,7 @@
             { "id": 7, "name": "cool" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "SpringGreen",
@@ -361,7 +369,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "SeaGreen",
@@ -371,7 +379,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "MediumAquamarine",
@@ -381,7 +389,7 @@
             { "id": 5, "name": "relaxing" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "MediumSpringGreen",
@@ -401,9 +409,8 @@
             { "id": 9, "name": "elegant" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
-    // Blues
     {
         "name": "Blue",
         "hexNumber": "#0000FF",
@@ -412,7 +419,7 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "RoyalBlue",
@@ -422,7 +429,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "DodgerBlue",
@@ -442,7 +449,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "SkyBlue",
@@ -462,7 +469,7 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "LightBlue",
@@ -472,7 +479,7 @@
             { "id": 5, "name": "relaxing" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "PowderBlue",
@@ -492,7 +499,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "SteelBlue",
@@ -502,9 +509,8 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
-    // Purples/Violets
     {
         "name": "Violet",
         "hexNumber": "#EE82EE",
@@ -523,7 +529,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "Thistle",
@@ -533,7 +539,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "Plum",
@@ -553,7 +559,7 @@
             { "id": 2, "name": "cheerful" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "Fuchsia",
@@ -563,7 +569,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "DarkOrchid",
@@ -573,7 +579,7 @@
             { "id": 7, "name": "cool" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
     {
         "name": "DarkViolet",
@@ -593,7 +599,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 2 }
     },
     {
         "name": "DarkMagenta",
@@ -603,9 +609,8 @@
             { "id": 2, "name": "cheerful" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 3 }
+        "style": { "id": 2 }
     },
-    // Browns
     {
         "name": "Brown",
         "hexNumber": "#A52A2A",
@@ -624,7 +629,7 @@
             { "id": 5, "name": "relaxing" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "Sienna",
@@ -644,7 +649,7 @@
             { "id": 4, "name": "warm" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "Peru",
@@ -654,7 +659,7 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
     {
         "name": "DarkGoldenrod",
@@ -674,7 +679,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "RosyBrown",
@@ -694,7 +699,7 @@
             { "id": 4, "name": "warm" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
     {
         "name": "SandyBrown",
@@ -704,9 +709,8 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
-    // Blacks/Grays
     {
         "name": "Black",
         "hexNumber": "#000000",
@@ -715,7 +719,7 @@
             { "id": 4, "name": "warm" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
     {
         "name": "DimGray",
@@ -735,7 +739,7 @@
             { "id": 2, "name": "cheerful" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "DarkSlateGray",
@@ -745,7 +749,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
     {
         "name": "LightSlateGray",
@@ -755,7 +759,7 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "Gray",
@@ -775,7 +779,7 @@
             { "id": 8, "name": "energetic" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
     {
         "name": "Silver",
@@ -785,7 +789,7 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "LightGray",
@@ -805,9 +809,8 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
-    // Whites
     {
         "name": "White",
         "hexNumber": "#FFFFFF",
@@ -816,7 +819,7 @@
             { "id": 4, "name": "warm" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "Snow",
@@ -836,7 +839,7 @@
             { "id": 2, "name": "cheerful" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "MintCream",
@@ -856,7 +859,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
     {
         "name": "AliceBlue",
@@ -866,7 +869,7 @@
             { "id": 6, "name": "vibrant" }
         ],
         "space": { "id": 2 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "GhostWhite",
@@ -886,7 +889,7 @@
             { "id": 10, "name": "sophisticated" }
         ],
         "space": { "id": 3 },
-        "style": { "id": 2 }
+        "style": { "id": 3 }
     },
     {
         "name": "Seashell",
@@ -896,7 +899,7 @@
             { "id": 4, "name": "warm" }
         ],
         "space": { "id": 1 },
-        "style": { "id": 1 }
+        "style": { "id": 3 }
     },
     {
         "name": "Beige",
