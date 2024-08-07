@@ -1,6 +1,39 @@
 [
 
     {
+        "name": "AmberGlow",
+        "hexNumber": "#F29F05",
+        "vibeList": [
+            { "id": 4, "name": "warm" },
+            { "id": 10, "name": "sophisticated" }
+        ],
+        "space": { "id": 1 },
+        "style": { "id": 1 }
+    },
+
+    {
+        "name": "GoldenMeadow",
+        "hexNumber": "#F2B705",
+        "vibeList": [
+            { "id": 2, "name": "cheerful" },
+            { "id": 6, "name": "vibrant" }
+        ],
+        "space": { "id": 2 },
+        "style": { "id": 1 }
+    },
+
+    {
+        "name": "Pumpkin",
+        "hexNumber": "#F27F1B",
+        "vibeList": [
+            { "id": 9, "name": "elegant" },
+            { "id": 10, "name": "sophisticated" }
+        ],
+        "space": { "id": 3 },
+        "style": { "id": 1 }
+    },
+
+    {
         "name": "Red",
         "hexNumber": "#FF0000",
         "vibeList": [
