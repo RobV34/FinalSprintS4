@@ -33,6 +33,7 @@ public class ColorController {
         return colorService.addColor(newColor);
     }
 
+<<<<<<< Updated upstream
     @PutMapping("updateColor/{id}")
 
     public Color updateColor(@PathVariable Long id, @RequestBody Color updatedColor) {
@@ -42,6 +43,11 @@ public class ColorController {
     @DeleteMapping("deleteColor/{id}")
     public void deleteColor(@PathVariable Long id) {
         colorService.deleteColor(id);
+=======
+    @PostMapping("newColors")
+    public List<Color> addNewColors(@RequestBody List<Color> newColors) {
+        return colorService.addColors(newColors);
+>>>>>>> Stashed changes
     }
 
 

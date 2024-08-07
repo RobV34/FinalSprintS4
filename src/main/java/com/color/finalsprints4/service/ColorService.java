@@ -38,6 +38,7 @@ public class ColorService {
         return colorRepository.save(color);
      }
 
+<<<<<<< Updated upstream
      public Color getColorById(Long id){
          Optional<Color> result = colorRepository.findById(id);
 
@@ -46,6 +47,14 @@ public class ColorService {
          }
 
          return null;
+=======
+    public List<Color> addColors(List<Color> newColors) {
+        return (List<Color>) colorRepository.saveAll(newColors);
+    }
+
+     public Optional<Color> getColorById(Long id){
+        return colorRepository.findById(id);
+>>>>>>> Stashed changes
      }
 
     public Optional<Color> getUserColor(List<Long> userVibesListOfId, Long userSpaceId, Long userStyleId) {
@@ -69,6 +78,7 @@ public class ColorService {
         return colorVibes.size();
     }
 
+<<<<<<< Updated upstream
     public void deleteColor(Long id) {
         colorRepository.deleteById(id);
     }
@@ -86,4 +96,7 @@ public class ColorService {
         return colorRepository.save(colorToUpdate); 
     }
   
+=======
+
+>>>>>>> Stashed changes
 }

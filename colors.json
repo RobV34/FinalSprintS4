@@ -1,0 +1,914 @@
+[
+
+  {
+    "name": "Red",
+    "hexNumber": "#FF0000",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "FireBrick",
+    "hexNumber": "#B22222",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Crimson",
+    "hexNumber": "#DC143C",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "IndianRed",
+    "hexNumber": "#CD5C5C",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Salmon",
+    "hexNumber": "#FA8072",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "DarkSalmon",
+    "hexNumber": "#E9967A",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "LightCoral",
+    "hexNumber": "#F08080",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 7, "name": "cool" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Red",
+    "hexNumber": "#FF6347",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "LightSalmon",
+    "hexNumber": "#FFA07A",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "DarkRed",
+    "hexNumber": "#8B0000",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+
+  {
+    "name": "Orange",
+    "hexNumber": "#FFA500",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "DarkOrange",
+    "hexNumber": "#FF8C00",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 7, "name": "cool" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Coral",
+    "hexNumber": "#FF7F50",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Tomato",
+    "hexNumber": "#FF6347",
+    "vibeList": [
+      { "id": 8, "name": "energetic" },
+      { "id": 3, "name": "calm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "OrangeRed",
+    "hexNumber": "#FF4500",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "LightSalmon",
+    "hexNumber": "#FFA07A",
+    "vibeList": [
+      { "id": 4, "name": "warm" },
+      { "id": 1, "name": "bold" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "SandyBrown",
+    "hexNumber": "#F4A460",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Goldenrod",
+    "hexNumber": "#DAA520",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "DarkGoldenrod",
+    "hexNumber": "#B8860B",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Peru",
+    "hexNumber": "#CD853F",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Gold",
+    "hexNumber": "#FFD700",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Yellow",
+    "hexNumber": "#FFFF00",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "LightYellow",
+    "hexNumber": "#FFFFE0",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "LemonChiffon",
+    "hexNumber": "#FFFACD",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "LightGoldenrodYellow",
+    "hexNumber": "#FAFAD2",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "PapayaWhip",
+    "hexNumber": "#FFEFD5",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Moccasin",
+    "hexNumber": "#FFE4B5",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "PeachPuff",
+    "hexNumber": "#FFDAB9",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "PaleGoldenrod",
+    "hexNumber": "#EEE8AA",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Khaki",
+    "hexNumber": "#F0E68C",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "DarkKhaki",
+    "hexNumber": "#BDB76B",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 1 }
+  },
+  {
+    "name": "Green",
+    "hexNumber": "#008000",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "ForestGreen",
+    "hexNumber": "#228B22",
+    "vibeList": [
+      { "id": 6, "name": "vibrant" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "LimeGreen",
+    "hexNumber": "#32CD32",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 5, "name": "relaxing" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Lime",
+    "hexNumber": "#00FF00",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 7, "name": "cool" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "SpringGreen",
+    "hexNumber": "#00FF7F",
+    "vibeList": [
+      { "id": 4, "name": "warm" },
+      { "id": 9, "name": "elegant" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "MediumSeaGreen",
+    "hexNumber": "#3CB371",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "SeaGreen",
+    "hexNumber": "#2E8B57",
+    "vibeList": [
+      { "id": 6, "name": "vibrant" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "MediumAquamarine",
+    "hexNumber": "#66CDAA",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 5, "name": "relaxing" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "MediumSpringGreen",
+    "hexNumber": "#00FA9A",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 7, "name": "cool" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "MintCream",
+    "hexNumber": "#F5FFFA",
+    "vibeList": [
+      { "id": 4, "name": "warm" },
+      { "id": 9, "name": "elegant" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Blue",
+    "hexNumber": "#0000FF",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "RoyalBlue",
+    "hexNumber": "#4169E1",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "DodgerBlue",
+    "hexNumber": "#1E90FF",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 7, "name": "cool" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "DeepSkyBlue",
+    "hexNumber": "#00BFFF",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "SkyBlue",
+    "hexNumber": "#87CEEB",
+    "vibeList": [
+      { "id": 4, "name": "warm" },
+      { "id": 9, "name": "elegant" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "LightSkyBlue",
+    "hexNumber": "#87CEFA",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "LightBlue",
+    "hexNumber": "#ADD8E6",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 5, "name": "relaxing" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "PowderBlue",
+    "hexNumber": "#B0E0E6",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 7, "name": "cool" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "LightSteelBlue",
+    "hexNumber": "#B0C4DE",
+    "vibeList": [
+      { "id": 4, "name": "warm" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "SteelBlue",
+    "hexNumber": "#4682B4",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Violet",
+    "hexNumber": "#EE82EE",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Orchid",
+    "hexNumber": "#DA70D6",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Thistle",
+    "hexNumber": "#D8BFD8",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Plum",
+    "hexNumber": "#DDA0DD",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Magenta",
+    "hexNumber": "#FF00FF",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Fuchsia",
+    "hexNumber": "#FF00FF",
+    "vibeList": [
+      { "id": 6, "name": "vibrant" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "DarkOrchid",
+    "hexNumber": "#9932CC",
+    "vibeList": [
+      { "id": 4, "name": "warm" },
+      { "id": 7, "name": "cool" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "DarkViolet",
+    "hexNumber": "#9400D3",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 5, "name": "relaxing" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "BlueViolet",
+    "hexNumber": "#8A2BE2",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "DarkMagenta",
+    "hexNumber": "#8B008B",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 2 }
+  },
+  {
+    "name": "Brown",
+    "hexNumber": "#A52A2A",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "SaddleBrown",
+    "hexNumber": "#8B4513",
+    "vibeList": [
+      { "id": 6, "name": "vibrant" },
+      { "id": 5, "name": "relaxing" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Sienna",
+    "hexNumber": "#A0522D",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Chocolate",
+    "hexNumber": "#D2691E",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Peru",
+    "hexNumber": "#CD853F",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "DarkGoldenrod",
+    "hexNumber": "#B8860B",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Goldenrod",
+    "hexNumber": "#DAA520",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "RosyBrown",
+    "hexNumber": "#BC8F8F",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "BurlyWood",
+    "hexNumber": "#DEB887",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "SandyBrown",
+    "hexNumber": "#F4A460",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Black",
+    "hexNumber": "#000000",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "DimGray",
+    "hexNumber": "#696969",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "SlateGray",
+    "hexNumber": "#708090",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "DarkSlateGray",
+    "hexNumber": "#2F4F4F",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "LightSlateGray",
+    "hexNumber": "#778899",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Gray",
+    "hexNumber": "#808080",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "DarkGray",
+    "hexNumber": "#A9A9A9",
+    "vibeList": [
+      { "id": 7, "name": "cool" },
+      { "id": 8, "name": "energetic" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Silver",
+    "hexNumber": "#C0C0C0",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "LightGray",
+    "hexNumber": "#D3D3D3",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Gainsboro",
+    "hexNumber": "#DCDCDC",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "White",
+    "hexNumber": "#FFFFFF",
+    "vibeList": [
+      { "id": 2, "name": "cheerful" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Snow",
+    "hexNumber": "#FFFAFA",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "HoneyDew",
+    "hexNumber": "#F0FFF0",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "MintCream",
+    "hexNumber": "#F5FFFA",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Azure",
+    "hexNumber": "#F0FFFF",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "AliceBlue",
+    "hexNumber": "#F0F8FF",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "GhostWhite",
+    "hexNumber": "#F8F8FF",
+    "vibeList": [
+      { "id": 3, "name": "calm" },
+      { "id": 2, "name": "cheerful" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "WhiteSmoke",
+    "hexNumber": "#F5F5F5",
+    "vibeList": [
+      { "id": 9, "name": "elegant" },
+      { "id": 10, "name": "sophisticated" }
+    ],
+    "space": { "id": 3 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Seashell",
+    "hexNumber": "#FFF5EE",
+    "vibeList": [
+      { "id": 1, "name": "bold" },
+      { "id": 4, "name": "warm" }
+    ],
+    "space": { "id": 1 },
+    "style": { "id": 3 }
+  },
+  {
+    "name": "Beige",
+    "hexNumber": "#F5F5DC",
+    "vibeList": [
+      { "id": 5, "name": "relaxing" },
+      { "id": 6, "name": "vibrant" }
+    ],
+    "space": { "id": 2 },
+    "style": { "id": 3 }
+  }
+]
